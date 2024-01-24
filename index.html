@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasanremo</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./library/jquery-3.7.1.min.js"></script>
+    <script src="./library/jszip.js"></script>
+    <script src="./library/xlsx.js"></script>
+
 </head>
 
 <body>
@@ -16,18 +20,70 @@
         </div>
     </div>
     <div class="body">
+
+        <div id="filediv" class="file">
+            <input type="file" id="fileUpload" accept=".xls,.xlsx"/>
+            <button type="button" id="uploadExcel">Convert</button>
+            <pre id="jsonData"></pre>
+        </div>
         
-        <div id="card1" class="card">
+        <div id="card0" class="card">
             <div class="headcard">
-                <img class="imgprofile" src="./assets/giovanni.jpg"></img>
+                <img id="foto0" class="imgprofile"></img>
                 <div class="namediv">
-                    <p id="name" class="nomepersona">Giovanni</p>
-                    <p id="surname" class="nomepersona">Romeo</p>
+                    <p id="name0" class="nomepersona"></p>
+                    <p id="surname0" class="nomepersona"></p>
                 </div>
                 <img class="img first" src="./assets/first.png"></img>
             </div>
             <div class="nomesquadra">
-                <p class="nomesquadratxt">Nome Squadra</p>
+                <p id="nomesquadratxt0" class="nomesquadratxt"></p>
+            </div>
+            <div id="elenco0" class="elenco">
+                <div class="riga">
+                    <p class="intestazione">Nome cantante</p>
+                    <p class="intestazione">Punteggio</p>
+                </div>
+                <hr class="separatore" />
+                <div class="riga">
+                    <p id="cantante1_0">Nome 1</p>
+                    <p id="punteggio1_0">Punteggio</p>
+                </div>
+                <div class="riga">
+                    <p id="cantante2_0">Nome 2</p>
+                    <p id="punteggio2_0">Punteggio</p>
+                </div>
+                <div class="riga">
+                    <p id="cantante3_0">Nome 3</p>
+                    <p id="punteggio3_0">Punteggio</p>
+                </div>
+                <div class="riga">
+                    <p id="cantante4_0">Nome 4</p>
+                    <p id="punteggio4_0">Punteggio</p>
+                </div>
+                <div class="riga">
+                    <p id="cantante5_0">Nome 5</p>
+                    <p id="punteggio5_0">Punteggio</p>
+                </div>
+                <hr class="separatore" />
+                <div class="riga">
+                    <p id="totale0">Totale</p>
+                    <p id="punteggiotot_0" class="bold">Punteggio</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="card1" class="card">
+            <div class="headcard">
+                <img id="foto1" class="imgprofile"></img>
+                <div class="namediv">
+                    <p id="name1" class="nomepersona"></p>
+                    <p id="surname1" class="nomepersona"></p>
+                </div>
+                <img class="img hide" src="./assets/first.png"></img>
+            </div>
+            <div class="nomesquadra">
+                <p id="nomesquadratxt1" class="nomesquadratxt">Nome Squadra</p>
             </div>
             <div id="elenco1" class="elenco">
                 <div class="riga">
@@ -36,44 +92,44 @@
                 </div>
                 <hr class="separatore" />
                 <div class="riga">
-                    <p>Nome 1</p>
-                    <p>Punteggio</p>
+                    <p id="cantante1_1">Nome 1</p>
+                    <p id="punteggio1_1">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 2</p>
-                    <p>Punteggio</p>
+                    <p id="cantante2_1">Nome 2</p>
+                    <p id="punteggio2_1">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 3</p>
-                    <p>Punteggio</p>
+                    <p id="cantante3_1">Nome 3</p>
+                    <p id="punteggio3_1">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 4</p>
-                    <p>Punteggio</p>
+                    <p id="cantante4_1">Nome 4</p>
+                    <p id="punteggio4_1">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 5</p>
-                    <p>Punteggio</p>
+                    <p id="cantante5_1">Nome 5</p>
+                    <p id="punteggio5_1">Punteggio</p>
                 </div>
                 <hr class="separatore" />
                 <div class="riga">
-                    <p>Totale</p>
-                    <p>Punteggio</p>
+                    <p id="totale1">Totale</p>
+                    <p id="punteggiotot_1" class="bold">Punteggio</p>
                 </div>
             </div>
 
         </div>
         <div id="card2" class="card">
             <div class="headcard">
-                <img class="imgprofile" src="./assets/sabrina.png"></img>
+                <img id="foto2" class="imgprofile"></img>
                 <div class="namediv">
-                    <p id="name" class="nomepersona">Sabrina</p>
-                    <p id="surname" class="nomepersona">Corrado</p>
+                    <p id="name2" class="nomepersona"></p>
+                    <p id="surname2" class="nomepersona"></p>
                 </div>
-                <img class="img first" src="./assets/first.png"></img>
+                <img class="img hide" src="./assets/first.png"></img>
             </div>
             <div class="nomesquadra">
-                <p class="nomesquadratxt">Nome Squadra</p>
+                <p id="nomesquadratxt2" class="nomesquadratxt">Nome Squadra</p>
             </div>
             <div id="elenco1" class="elenco">
                 <div class="riga">
@@ -82,44 +138,44 @@
                 </div>
                 <hr class="separatore" />
                 <div class="riga">
-                    <p>Nome 1</p>
-                    <p>Punteggio</p>
+                    <p id="cantante1_2">Nome 1</p>
+                    <p id="punteggio1_2">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 2</p>
-                    <p>Punteggio</p>
+                    <p id="cantante2_2">Nome 2</p>
+                    <p id="punteggio2_2">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 3</p>
-                    <p>Punteggio</p>
+                    <p id="cantante3_2">Nome 3</p>
+                    <p id="punteggio3_2">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 4</p>
-                    <p>Punteggio</p>
+                    <p id="cantante4_2">Nome 4</p>
+                    <p id="punteggio4_2">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 5</p>
-                    <p>Punteggio</p>
+                    <p id="cantante5_2">Nome 5</p>
+                    <p id="punteggio5_2">Punteggio</p>
                 </div>
                 <hr class="separatore" />
                 <div class="riga">
-                    <p>Totale</p>
-                    <p>Punteggio</p>
+                    <p id="totale2">Totale</p>
+                    <p id="punteggiotot_2" class="bold">Punteggio</p>
                 </div>
             </div>
 
         </div>
         <div id="card3" class="card">
             <div class="headcard">
-                <img class="imgprofile" src="./assets/anna.png"></img>
+                <img id="foto3" class="imgprofile"></img>
                 <div class="namediv">
-                    <p id="name" class="nomepersona">Anna</p>
-                    <p id="surname" class="nomepersona">Buia</p>
+                    <p id="name3" class="nomepersona"></p>
+                    <p id="surname3" class="nomepersona"></p>
                 </div>
-                <img class="img first" src="./assets/first.png"></img>
+                <img class="img hide" src="./assets/first.png"></img>
             </div>
             <div class="nomesquadra">
-                <p class="nomesquadratxt">Nome Squadra</p>
+                <p id="nomesquadratxt3" class="nomesquadratxt">Nome Squadra</p>
             </div>
             <div id="elenco1" class="elenco">
                 <div class="riga">
@@ -128,44 +184,44 @@
                 </div>
                 <hr class="separatore" />
                 <div class="riga">
-                    <p>Nome 1</p>
-                    <p>Punteggio</p>
+                    <p id="cantante1_3">Nome 1</p>
+                    <p id="punteggio1_3">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 2</p>
-                    <p>Punteggio</p>
+                    <p id="cantante2_3">Nome 2</p>
+                    <p id="punteggio2_3">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 3</p>
-                    <p>Punteggio</p>
+                    <p id="cantante3_3">Nome 3</p>
+                    <p id="punteggio3_3">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 4</p>
-                    <p>Punteggio</p>
+                    <p id="cantante4_3">Nome 4</p>
+                    <p id="punteggio4_3">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 5</p>
-                    <p>Punteggio</p>
+                    <p id="cantante5_3">Nome 5</p>
+                    <p id="punteggio5_3">Punteggio</p>
                 </div>
                 <hr class="separatore" />
                 <div class="riga">
-                    <p>Totale</p>
-                    <p>Punteggio</p>
+                    <p id="totale3">Totale</p>
+                    <p id="punteggiotot_3" class="bold">Punteggio</p>
                 </div>
             </div>
 
         </div>
         <div id="card4" class="card">
             <div class="headcard">
-                <img class="imgprofile" src="./assets/giuseppe.png"></img>
+                <img id="foto4" class="imgprofile"></img>
                 <div class="namediv">
-                    <p id="name" class="nomepersona">Giuseppe</p>
-                    <p id="surname" class="nomepersona">Borgiese</p>
+                    <p id="name4" class="nomepersona"></p>
+                    <p id="surname4" class="nomepersona"></p>
                 </div>
-                <img class="img first" src="./assets/first.png"></img>
+                <img class="img hide" src="./assets/first.png"></img>
             </div>
             <div class="nomesquadra">
-                <p class="nomesquadratxt">Nome Squadra</p>
+                <p id="nomesquadratxt4" class="nomesquadratxt">Nome Squadra</p>
             </div>
             <div id="elenco1" class="elenco">
                 <div class="riga">
@@ -174,44 +230,44 @@
                 </div>
                 <hr class="separatore" />
                 <div class="riga">
-                    <p>Nome 1</p>
-                    <p>Punteggio</p>
+                    <p id="cantante1_4">Nome 1</p>
+                    <p id="punteggio1_4">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 2</p>
-                    <p>Punteggio</p>
+                    <p id="cantante2_4">Nome 2</p>
+                    <p id="punteggio2_4">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 3</p>
-                    <p>Punteggio</p>
+                    <p id="cantante3_4">Nome 3</p>
+                    <p id="punteggio3_4">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 4</p>
-                    <p>Punteggio</p>
+                    <p id="cantante4_4">Nome 4</p>
+                    <p id="punteggio4_4">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 5</p>
-                    <p>Punteggio</p>
+                    <p id="cantante5_4">Nome 5</p>
+                    <p id="punteggio5_4">Punteggio</p>
                 </div>
                 <hr class="separatore" />
                 <div class="riga">
-                    <p>Totale</p>
-                    <p>Punteggio</p>
+                    <p id="totale4">Totale</p>
+                    <p id="punteggiotot_4" class="bold">Punteggio</p>
                 </div>
             </div>
 
         </div>
         <div id="card5" class="card">
             <div class="headcard">
-                <img class="imgprofile" src="./assets/sofia.png"></img>
+                <img id="foto5" class="imgprofile"></img>
                 <div class="namediv">
-                    <p id="name" class="nomepersona">Sofia</p>
-                    <p id="surname" class="nomepersona">Salciccia</p>
+                    <p id="name5" class="nomepersona"></p>
+                    <p id="surname5" class="nomepersona"></p>
                 </div>
-                <img class="img first" src="./assets/first.png"></img>
+                <img class="img hide" src="./assets/first.png"></img>
             </div>
             <div class="nomesquadra">
-                <p class="nomesquadratxt">Nome Squadra</p>
+                <p id="nomesquadratxt5" class="nomesquadratxt">Nome Squadra</p>
             </div>
             <div id="elenco1" class="elenco">
                 <div class="riga">
@@ -220,80 +276,36 @@
                 </div>
                 <hr class="separatore" />
                 <div class="riga">
-                    <p>Nome 1</p>
-                    <p>Punteggio</p>
+                    <p id="cantante1_5">Nome 1</p>
+                    <p id="punteggio1_5">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 2</p>
-                    <p>Punteggio</p>
+                    <p id="cantante2_5">Nome 2</p>
+                    <p id="punteggio2_5">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 3</p>
-                    <p>Punteggio</p>
+                    <p id="cantante3_5">Nome 3</p>
+                    <p id="punteggio3_5">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 4</p>
-                    <p>Punteggio</p>
+                    <p id="cantante4_5">Nome 4</p>
+                    <p id="punteggio4_5">Punteggio</p>
                 </div>
                 <div class="riga">
-                    <p>Nome 5</p>
-                    <p>Punteggio</p>
+                    <p id="cantante5_5">Nome 5</p>
+                    <p id="punteggio5_5">Punteggio</p>
                 </div>
                 <hr class="separatore" />
                 <div class="riga">
-                    <p>Totale</p>
-                    <p>Punteggio</p>
-                </div>
-            </div>
-
-        </div>
-        <div id="card6" class="card">
-            <div class="headcard">
-                <img class="imgprofile" src="./assets/vitaliano.png"></img>
-                <div class="namediv">
-                    <p id="name" class="nomepersona">Vitaliano</p>
-                    <p id="surname" class="nomepersona">Frese</p>
-                </div>
-                <img class="img first" src="./assets/first.png"></img>
-            </div>
-            <div class="nomesquadra">
-                <p class="nomesquadratxt">Nome Squadra</p>
-            </div>
-            <div id="elenco1" class="elenco">
-                <div class="riga">
-                    <p class="intestazione">Nome cantante</p>
-                    <p class="intestazione">Punteggio</p>
-                </div>
-                <hr class="separatore" />
-                <div class="riga">
-                    <p>Nome 1</p>
-                    <p>Punteggio</p>
-                </div>
-                <div class="riga">
-                    <p>Nome 2</p>
-                    <p>Punteggio</p>
-                </div>
-                <div class="riga">
-                    <p>Nome 3</p>
-                    <p>Punteggio</p>
-                </div>
-                <div class="riga">
-                    <p>Nome 4</p>
-                    <p>Punteggio</p>
-                </div>
-                <div class="riga">
-                    <p>Nome 5</p>
-                    <p>Punteggio</p>
-                </div>
-                <hr class="separatore" />
-                <div class="riga">
-                    <p>Totale</p>
-                    <p>Punteggio</p>
+                    <p id="totale5">Totale</p>
+                    <p id="punteggiotot_5" class="bold">Punteggio</p>
                 </div>
             </div>
 
         </div>
     </div>
 </body>
+
+<script src="./index.js"></script>
 
 </html>

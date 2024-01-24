@@ -1,0 +1,228 @@
+{
+  "Partecipanti":[
+   {
+    "Nome": "Giovanni",
+    "Cognome": "Romeo ",
+    "NomeSquadra": "Piu costa meno costa",
+    "Cantante1": "Emma",
+    "pt1": 0,
+    "Cantante22": "Diodato",
+    "pt2": 0,
+    "Cantante3": "Gazzelle",
+    "pt3": 0,
+    "Cantante4": "Mamoohd",
+    "pt4": 0,
+    "Cantante5": "Mr. Rain",
+    "pt5": 0,
+    "Totale": 0,
+    "codice": "01"
+   },
+   {
+    "Nome": "Sabrina",
+    "Cognome": "Corrado",
+    "NomeSquadra": "Prosutt quett squad",
+    "Cantante1": "The Kolors",
+    "pt1": 0,
+    "Cantante22": "Clara",
+    "pt2": 0,
+    "Cantante3": "Ghali",
+    "pt3": 0,
+    "Cantante4": "Irama",
+    "pt4": 0,
+    "Cantante5": "Maninni",
+    "pt5": 0,
+    "Totale": 0,
+    "codice": "02"
+   },
+   {
+    "Nome": "Sofia",
+    "Cognome": "Salciccia",
+    "NomeSquadra": "I kukkiuni",
+    "Cantante1": "Ricchi e Poveri",
+    "pt1": 0,
+    "Cantante22": "Bnkr44",
+    "pt2": 0,
+    "Cantante3": "Fred De Palma",
+    "pt3": 0,
+    "Cantante4": "Il Volo",
+    "pt4": 0,
+    "Cantante5": "Loredana Bertè",
+    "pt5": 0,
+    "Totale": 0,
+    "codice": "03"
+   },
+   {
+    "Nome": "Anna",
+    "Cognome": "Buia",
+    "NomeSquadra": "Quelle insulze zecche dei Forester Bauli",
+    "Cantante1": "Annalisa",
+    "pt1": 0,
+    "Cantante22": "Negramaro",
+    "pt2": 0,
+    "Cantante3": "Angelina Mango",
+    "pt3": 0,
+    "Cantante4": "Santi Francesi",
+    "pt4": 0,
+    "Cantante5": "Alfa",
+    "pt5": 0,
+    "Totale": 0,
+    "codice": "04"
+   },
+   {
+    "Nome": "Giuseppe",
+    "Cognome": "Borgese",
+    "NomeSquadra": "Le umide",
+    "Cantante1": "Alessandra Amoroso",
+    "pt1": 0,
+    "Cantante22": "Fiorella Mannoia",
+    "pt2": 0,
+    "Cantante3": "Rose Villain",
+    "pt3": 0,
+    "Cantante4": "La Sad",
+    "pt4": 0,
+    "Cantante5": "Big  Mama",
+    "pt5": 0,
+    "Totale": 0,
+    "codice": "05"
+   },
+   {
+    "Nome": "Vitaliano ",
+    "Cognome": "Frese",
+    "NomeSquadra": "Saint Patrick Fc",
+    "Cantante1": "Geolier",
+    "pt1": 0,
+    "Cantante22": "Sangiovanni",
+    "pt2": 0,
+    "Cantante3": "Dargen D'amico",
+    "pt3": 0,
+    "Cantante4": "Nek e Renga",
+    "pt4": 0,
+    "Cantante5": "Il Tre",
+    "pt5": 0,
+    "Totale": 0,
+    "codice": "06"
+   }
+  ],
+  "Cantanti":[
+   {
+    "Nome cantante": "Alessandra Amoroso",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Alfa",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Angelina Mango",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Annalisa",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Big  Mama",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Bnkr44",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Clara",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Dargen D'amico",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Diodato",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Emma",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Fiorella Mannoia",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Fred De Palma",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Gazzelle",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Geolier",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Ghali",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Il Tre",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Il Volo",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Irama",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "La Sad",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Loredana Bertè",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Mamoohd",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Maninni",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Mr. Rain",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Negramaro",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Nek e Renga",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Ricchi e Poveri",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Rose Villain",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Sangiovanni",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "Santi Francesi",
+    "Totale": 0
+   },
+   {
+    "Nome cantante": "The Kolors",
+    "Totale": 0
+   }
+  ]
+  }
