@@ -1,21 +1,21 @@
 {
 "Partecipanti":[
  {
-  "Nome": "Sabrina",
-  "Cognome": "Corrado",
-  "NomeSquadra": "Prosutt quett squad",
-  "Cantante1": "The Kolors",
-  "pt1": 35,
-  "Cantante2": "Clara",
-  "pt2": 15,
-  "Cantante3": "Ghali",
-  "pt3": 50,
-  "Cantante4": "Irama",
-  "pt4": 15,
-  "Cantante5": "Maninni",
+  "Nome": "Giovanni",
+  "Cognome": "Romeo ",
+  "NomeSquadra": "Piu costa meno costa",
+  "Cantante1": "Emma",
+  "pt1": 50,
+  "Cantante2": "Diodato",
+  "pt2": 55,
+  "Cantante3": "Gazzelle",
+  "pt3": 45,
+  "Cantante4": "Mamoohd",
+  "pt4": 68,
+  "Cantante5": "Mr. Rain",
   "pt5": 50,
-  "Totale": 285,
-  "codice": "02"
+  "Totale": 268,
+  "codice": "01"
  },
  {
   "Nome": "Vitaliano ",
@@ -86,21 +86,21 @@
   "codice": "04"
  },
  {
-  "Nome": "Giovanni",
-  "Cognome": "Romeo ",
-  "NomeSquadra": "Piu costa meno costa",
-  "Cantante1": "Emma",
-  "pt1": 50,
-  "Cantante2": "Diodato",
-  "pt2": 55,
-  "Cantante3": "Gazzelle",
-  "pt3": 45,
-  "Cantante4": "Mamoohd",
-  "pt4": 68,
-  "Cantante5": "Mr. Rain",
+  "Nome": "Sabrina",
+  "Cognome": "Corrado",
+  "NomeSquadra": "Prosutt quett squad",
+  "Cantante1": "The Kolors",
+  "pt1": 35,
+  "Cantante2": "Clara",
+  "pt2": 15,
+  "Cantante3": "Ghali",
+  "pt3": 50,
+  "Cantante4": "Irama",
+  "pt4": 15,
+  "Cantante5": "Maninni",
   "pt5": 50,
-  "Totale": 195,
-  "codice": "01"
+  "Totale": 165,
+  "codice": "02"
  }
 ],
 "Cantanti":[
