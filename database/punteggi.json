@@ -35,23 +35,6 @@
   "codice": "06"
  },
  {
-  "Nome": "Giuseppe",
-  "Cognome": "Borgese",
-  "NomeSquadra": "Le umide",
-  "Cantante1": "Alessandra Amoroso",
-  "pt1": 25,
-  "Cantante2": "Fiorella Mannoia",
-  "pt2": 30,
-  "Cantante3": "Rose Villain",
-  "pt3": 45,
-  "Cantante4": "La Sad",
-  "pt4": 85,
-  "Cantante5": "Big  Mama",
-  "pt5": 30,
-  "Totale": 215,
-  "codice": "05"
- },
- {
   "Nome": "Sofia",
   "Cognome": "Salciccia",
   "NomeSquadra": "I kukkiuni",
@@ -84,6 +67,23 @@
   "pt5": 50,
   "Totale": 240,
   "codice": "04"
+ },
+ {
+  "Nome": "Giuseppe",
+  "Cognome": "Borgese",
+  "NomeSquadra": "Le umide",
+  "Cantante1": "Alessandra Amoroso",
+  "pt1": 25,
+  "Cantante2": "Fiorella Mannoia",
+  "pt2": 30,
+  "Cantante3": "Rose Villain",
+  "pt3": 45,
+  "Cantante4": "La Sad",
+  "pt4": 85,
+  "Cantante5": "Big  Mama",
+  "pt5": 30,
+  "Totale": 215,
+  "codice": "05"
  },
  {
   "Nome": "Sabrina",
