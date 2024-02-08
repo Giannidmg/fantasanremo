@@ -7,30 +7,95 @@ if (fileupdate == true) {
   document.querySelector(".file").style.setProperty("display", "flex");
 }
 
+logPunteggi();
 
-fetch('./database/punteggi.json').then((response) => response.json()).then((json) => {
+
+
+
+
+
+
+
+async function logPunteggi() {
+  const response = await fetch("https://image-app.fantasanremo.com/data/artists.json");
+  const punteggi = await response.json();
+  console.log(punteggi)
+  fetch('./database/partecipanti.json').then((response) => response.json()).then((json) => {
   
-  var temp
-  var i = 0
-  for(i; i<Object.keys(json.Partecipanti).length; i++){
-    document.getElementById("foto".concat(i)).src = "./assets/".concat(json.Partecipanti[i].codice).concat(".png")
-    document.getElementById("name".concat(i)).innerHTML = json.Partecipanti[i].Nome
-    document.getElementById("surname".concat(i)).innerHTML = json.Partecipanti[i].Cognome
-    document.getElementById("nomesquadratxt".concat(i)).innerHTML = json.Partecipanti[i].NomeSquadra
-    document.getElementById("cantante1_".concat(i)).innerHTML = json.Partecipanti[i].Cantante1
-    document.getElementById("punteggio1_".concat(i)).innerHTML = json.Partecipanti[i].pt1
-    document.getElementById("cantante2_".concat(i)).innerHTML = json.Partecipanti[i].Cantante2
-    document.getElementById("punteggio2_".concat(i)).innerHTML = json.Partecipanti[i].pt2
-    document.getElementById("cantante3_".concat(i)).innerHTML = json.Partecipanti[i].Cantante3
-    document.getElementById("punteggio3_".concat(i)).innerHTML = json.Partecipanti[i].pt3
-    document.getElementById("cantante4_".concat(i)).innerHTML = json.Partecipanti[i].Cantante4
-    document.getElementById("punteggio4_".concat(i)).innerHTML = json.Partecipanti[i].pt4
-    document.getElementById("cantante5_".concat(i)).innerHTML = json.Partecipanti[i].Cantante5
-    document.getElementById("punteggio5_".concat(i)).innerHTML = json.Partecipanti[i].pt5
-    document.getElementById("punteggiotot_".concat(i)).innerHTML = json.Partecipanti[i].Totale
-  }
+    var temp;
+    var i = 0
+    for(i; i<Object.keys(json.Partecipanti).length; i++){
+      punteggi.forEach(e => {
+        if (e._id == json.Partecipanti[i].Cantante1) {
+          json.Partecipanti[i].Cantante1 = e
+        }
+      })
+      punteggi.forEach(e => {
+        if (e._id == json.Partecipanti[i].Cantante2) {
+          json.Partecipanti[i].Cantante2 = e
+        }
+      })
+      punteggi.forEach(e => {
+        if (e._id == json.Partecipanti[i].Cantante3) {
+          json.Partecipanti[i].Cantante3 = e
+        }
+      })
+      punteggi.forEach(e => {
+        if (e._id == json.Partecipanti[i].Cantante4) {
+          json.Partecipanti[i].Cantante4 = e
+        }
+      })
+      punteggi.forEach(e => {
+        if (e._id == json.Partecipanti[i].Cantante5) {
+          json.Partecipanti[i].Cantante5 = e
 
-});
+        }
+      });
+      console.log(json.Partecipanti[i])
+    }
+
+    var y = 0;
+
+    for(y; y<Object.keys(json.Partecipanti).length; y++){
+      tot = json.Partecipanti[y].Cantante1.totalPointsCaptain + 
+            json.Partecipanti[y].Cantante2.totalPoints +
+            json.Partecipanti[y].Cantante3.totalPoints +
+            json.Partecipanti[y].Cantante4.totalPoints +
+            json.Partecipanti[y].Cantante5.totalPoints;
+            json.Partecipanti[y].totale = tot;
+    }
+
+    console.log(json.Partecipanti)
+
+    json.Partecipanti = json.Partecipanti.sort((a, b) => {
+      if (a.totale > b.totale) {
+        return -1;
+      }
+    });
+
+    console.log(json.Partecipanti)
+  
+    var j = 0;
+    for(j; j<Object.keys(json.Partecipanti).length; j++){
+      document.getElementById("foto".concat(j)).src = "./assets/".concat(json.Partecipanti[j].codice).concat(".png")
+      document.getElementById("name".concat(j)).innerHTML = json.Partecipanti[j].Nome
+      document.getElementById("surname".concat(j)).innerHTML = json.Partecipanti[j].Cognome
+      document.getElementById("nomesquadratxt".concat(j)).innerHTML = json.Partecipanti[j].NomeSquadra
+      document.getElementById("cantante1_".concat(j)).innerHTML = json.Partecipanti[j].Cantante1.name.charAt(0).toUpperCase() + json.Partecipanti[j].Cantante1.name.slice(1).toLowerCase();
+      document.getElementById("punteggio1_".concat(j)).innerHTML = json.Partecipanti[j].Cantante1.totalPointsCaptain + " pt."
+      document.getElementById("cantante2_".concat(j)).innerHTML = json.Partecipanti[j].Cantante2.name.charAt(0).toUpperCase() + json.Partecipanti[j].Cantante2.name.slice(1).toLowerCase();
+      document.getElementById("punteggio2_".concat(j)).innerHTML = json.Partecipanti[j].Cantante2.totalPoints + " pt."
+      document.getElementById("cantante3_".concat(j)).innerHTML = json.Partecipanti[j].Cantante3.name.charAt(0).toUpperCase() + json.Partecipanti[j].Cantante3.name.slice(1).toLowerCase();
+      document.getElementById("punteggio3_".concat(j)).innerHTML = json.Partecipanti[j].Cantante3.totalPoints + " pt."
+      document.getElementById("cantante4_".concat(j)).innerHTML = json.Partecipanti[j].Cantante4.name.charAt(0).toUpperCase() + json.Partecipanti[j].Cantante4.name.slice(1).toLowerCase();
+      document.getElementById("punteggio4_".concat(j)).innerHTML = json.Partecipanti[j].Cantante4.totalPoints + " pt."
+      document.getElementById("cantante5_".concat(j)).innerHTML = json.Partecipanti[j].Cantante5.name.charAt(0).toUpperCase() + json.Partecipanti[j].Cantante5.name.slice(1).toLowerCase();
+      document.getElementById("punteggio5_".concat(j)).innerHTML = json.Partecipanti[j].Cantante5.totalPoints + " pt."
+      document.getElementById("punteggiotot_".concat(j)).innerHTML = json.Partecipanti[j].totale + " pt."
+    }
+  });
+
+}
 
 
 

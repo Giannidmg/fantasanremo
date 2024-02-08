@@ -1,0 +1,82 @@
+{
+    "Partecipanti":[
+     {
+      "Nome": "Giovanni",
+      "Cognome": "Romeo ",
+      "NomeSquadra": "Piu costa meno costa",
+      "Cantante1": "657b319f69a49ae3535e5683",
+      "Cantante2": "657b325569a49ae3535e568f",
+      "Cantante3": "657b333269a49ae3535e56a1",
+      "Cantante4": "657b327469a49ae3535e5693",
+      "Cantante5": "657b326469a49ae3535e5691",
+      "codice": "01",
+      "posizione": "0",
+      "totale": ""
+     },
+     {
+      "Nome": "Sabrina",
+      "Cognome": "Corrado",
+      "NomeSquadra": "Prosutt quett squad",
+      "Cantante1": "657b31f469a49ae3535e5689",
+      "Cantante2": "6582b04a21aa521ed13f29cd",
+      "Cantante3": "657b32de69a49ae3535e569b",
+      "Cantante4": "657b330c69a49ae3535e569f",
+      "Cantante5": "657b33d369a49ae3535e56b1",
+      "codice": "02",
+      "posizione": "0",
+      "totale": ""
+     },
+     {
+      "Nome": "Sofia",
+      "Cognome": "Salciccia",
+      "NomeSquadra": "I kukkiuni",
+      "Cantante1": "657b33a169a49ae3535e56ab",
+      "Cantante2": "6582b03721aa521ed13f29cb",
+      "Cantante3": "657b338869a49ae3535e56a9",
+      "Cantante4": "657b32a069a49ae3535e5699",
+      "Cantante5": "657b337369a49ae3535e56a7",
+      "codice": "03",
+      "posizione": "0",
+      "totale": ""
+     },
+     {
+      "Nome": "Anna",
+      "Cognome": "Buia",
+      "NomeSquadra": "Quelle insulze zecche dei Forester Bauli",
+      "Cantante1": "657b318469a49ae3535e567f",
+      "Cantante2": "657b31e469a49ae3535e5687",
+      "Cantante3": "657b318e69a49ae3535e5681",
+      "Cantante4": "6582b05b21aa521ed13f29cf",
+      "Cantante5": "657b328269a49ae3535e5695",
+      "codice": "04",
+      "posizione": "0",
+      "totale": ""
+     },
+     {
+      "Nome": "Giuseppe",
+      "Cognome": "Borgese",
+      "NomeSquadra": "Le umide",
+      "Cantante1": "657b315e69a49ae3535e567d",
+      "Cantante2": "657b329169a49ae3535e5697",
+      "Cantante3": "657b335f69a49ae3535e56a5",
+      "Cantante4": "657b334769a49ae3535e56a3",
+      "Cantante5": "657b33b069a49ae3535e56ad",
+      "codice": "05",
+      "posizione": "0",
+      "totale": ""
+     },
+     {
+      "Nome": "Vitaliano ",
+      "Cognome": "Frese",
+      "NomeSquadra": "Saint Patrick Fc",
+      "Cantante1": "657b31ad69a49ae3535e5685",
+      "Cantante2": "657b324669a49ae3535e568d",
+      "Cantante3": "657b322269a49ae3535e568b",
+      "Cantante4": "657b32fa69a49ae3535e569d",
+      "Cantante5": "657b33c269a49ae3535e56af",
+      "codice": "06",
+      "posizione": "0",
+      "totale": ""
+     }
+    ]
+    }

@@ -102,6 +102,11 @@ p {
   border-radius: 100%;
 }
 
+.imgcap{
+  height: 12px;
+  width: auto;
+}
+
 .first {
   opacity: 100%;
 }
@@ -166,4 +171,15 @@ p {
 .separatore {
   width: 90%;
   border: 0.5px solid rgb(255, 194, 87);
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 5px;
+}
+
+.center{
+  align-items: center;
 }
