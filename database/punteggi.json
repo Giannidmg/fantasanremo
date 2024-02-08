@@ -69,6 +69,23 @@
   "codice": "04"
  },
  {
+  "Nome": "Giuseppe",
+  "Cognome": "Borgese",
+  "NomeSquadra": "Le umide",
+  "Cantante1": "Alessandra Amoroso",
+  "pt1": 35,
+  "Cantante2": "Fiorella Mannoia",
+  "pt2": 55,
+  "Cantante3": "Rose Villain",
+  "pt3": 75,
+  "Cantante4": "La Sad",
+  "pt4": 95,
+  "Cantante5": "Big  Mama",
+  "pt5": 123,
+  "Totale": 383,
+  "codice": "05"
+ },
+ {
   "Nome": "Sabrina",
   "Cognome": "Corrado",
   "NomeSquadra": "Prosutt quett squad",
@@ -84,23 +101,6 @@
   "pt5": 65,
   "Totale": 345,
   "codice": "02"
- },
- {
-  "Nome": "Giuseppe",
-  "Cognome": "Borgese",
-  "NomeSquadra": "Le umide",
-  "Cantante1": "Alessandra Amoroso",
-  "pt1": 35,
-  "Cantante2": "Fiorella Mannoia",
-  "pt2": 55,
-  "Cantante3": "Rose Villain",
-  "pt3": 75,
-  "Cantante4": "La Sad",
-  "pt4": 95,
-  "Cantante5": "Big  Mama",
-  "pt5": 95,
-  "Totale": 355,
-  "codice": "05"
  }
 ],
 "Cantanti":[
