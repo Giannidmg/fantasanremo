@@ -17,7 +17,7 @@ logPunteggi();
 
 
 async function logPunteggi() {
-  const response = await fetch("https://image-app.fantasanremo.com/data/artists.json");
+  const response = await fetch("https://fantasanremo.com/data/1739294691550/artists.json");
   const punteggi = await response.json();
   console.log(punteggi)
   fetch('./database/partecipanti.json').then((response) => response.json()).then((json) => {
